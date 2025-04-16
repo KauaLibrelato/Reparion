@@ -43,7 +43,7 @@ export default function LoginPage() {
       } else {
         setError(result.message || "Falha na autenticação");
       }
-    } catch (err) {
+    } catch {
       setError("Ocorreu um erro ao fazer login. Tente novamente.");
     } finally {
       setIsLoading(false);
